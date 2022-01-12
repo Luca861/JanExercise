@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="d-flex justify-content-center p-5">
+<app-current-fact (even)="even($event)" (odd)="odd($event)"></app-current-fact>
+  </div>
+<div class="d-flex justify-content-around p-5">
+<app-even-facts [evenFacts]='evenFacts'></app-even-facts>
+<app-odd-facts [oddFacts]='oddFacts'></app-odd-facts>
+</div>
+</div>
